@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const prompt = require('prompt-sync')();
 
 async function scrapeAmazon(searchTerm) {
     // Launch headless browser
@@ -36,11 +37,7 @@ async function scrapeAmazon(searchTerm) {
 }
 
 async function run() {
-    const searchTerm = process.argv[2];
-    if (!searchTerm) {
-        console.error('Please provide a search term as a command-line argument.');
-        return;
-    }
+    const searchTerm = prompt('Enter the search term for Amazon.in: ');
     const products = await scrapeAmazon(searchTerm);
     console.log(JSON.stringify(products, null, 2));
 }
