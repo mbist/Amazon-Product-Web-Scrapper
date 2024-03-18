@@ -1,9 +1,9 @@
 Data Extraction via Headless Browser and shows all sponsored product and rest product.
 
 
-Install Node.js and npm if you haven't already.<br>
-Install Puppeteer by running npm install puppeteer in your project directory.<br>
-npm install prompt-sync
+<b>Install Node.js and npm if you haven't already</b>.<br>
+<b>Install Puppeteer by running npm install puppeteer</b> in your project directory.<br>
+<b>npm install prompt-sync</b>
 create file name with amazon_scraper.js.<br>
 Run the script using Node.js by executing node amazon_scraper.js.<br>
 Enter the search term when prompted.<br>
